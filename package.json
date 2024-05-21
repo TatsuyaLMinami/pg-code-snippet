@@ -1,0 +1,26 @@
+{
+  "name": "pg-code-snippet",
+  "displayName": "pg-code-snippet",
+  "description": "vue代码辅助,代码片段自动完成",
+  "version": "0.0.5",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "publisher": "TatsuyaSun",
+  "icon": "images/logo.jpg",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "'javascript'",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "'vue'",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
