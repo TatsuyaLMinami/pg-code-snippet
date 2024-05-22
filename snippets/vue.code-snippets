@@ -1,10 +1,10 @@
 {
-    "vue-sfc": {
-        "prefix": "vue",
+    "选项式vue": {
+        "prefix": "vue-sfc",
         "body": [
             "<template>",
             "  <div>",
-            "    <!-- -->",
+            "    ${1}",
             "  </div>",
             "</template>",
             "",
@@ -14,21 +14,21 @@
             "const emit = defineEmits([])",
             "defineExpose({ })",
             "onMounted(() => {",
-            "  //",
+            "  ${0}",
             "})",
             "</script>",
             "<style lang=\"scss\" scoped>",
             "</style>",
             ""
         ],
-        "description": "vue-sfc"
+        "description": "选项式vue"
     },
-    "vue-composition": {
+    "组合式vue": {
         "prefix": "vue-composition",
         "body": [
             "<template>",
             "  <div>",
-            "    <!-- -->",
+            "    ${1}",
             "  </div>",
             "</template>",
             "",
@@ -41,10 +41,10 @@
             "  emits: [],",
             "  setup(props, context) {",
             "    const data = reactive({",
-            "      //",
+            "      ${2}",
             "    })",
             "    onMounted(() => {",
-            "      //",
+            "      ${0}",
             "    })",
             "    return {",
             "      ...toRefs(data)",
@@ -56,10 +56,10 @@
             "</style>",
             ""
         ],
-        "description": "vue-composition"
+        "description": "组合式vue"
     },
-    "pg-table": {
-        "prefix": "pg-table",
+    "gl-table": {
+        "prefix": "gl-table",
         "body": [
             "<gl-table",
             "  :operators=\"tableData.operators\"",
@@ -70,10 +70,10 @@
             "  @cellFun=\"handleCell\"",
             "/>"
         ],
-        "description": "pg-table"
+        "description": "gl-table"
     },
-    "pg-drawer": {
-        "prefix": "pg-drawer",
+    "gl-drawer": {
+        "prefix": "gl-drawer",
         "body": [
             "<gl-drawer",
             "  ref=\"drawerRef\"",
@@ -85,25 +85,27 @@
             "  :before-close=\"handleClose\"",
             ">",
             "  <template #content>",
+            "    ${0}",
             "  </template>",
             "</gl-drawer>"
         ],
-        "description": "pg-drawer"
+        "description": "gl-drawer"
     },
-    "pg-form": {
-        "prefix": "pg-form",
+    "el-form": {
+        "prefix": "gl-form",
         "body": [
             "<el-form",
             "  ref=\"formRef\"",
             "  :model=\"form\"",
             "  label-width=\"120px\"",
             "  :rules=\"rules\">",
+            "   ${0}",
             "</el-form>"
         ],
-        "description": "pg-form"
+        "description": "el-form"
     },
-    "pg-tree": {
-        "prefix": "pg-tree",
+    "gl-tree": {
+        "prefix": "gl-tree",
         "body": [
             "<gl-tree",
             "  ref=\"treeRef\"",
@@ -117,10 +119,10 @@
             "  node-key=\"id\"",
             "/>"
         ],
-        "description": "pg-tree"
+        "description": "gl-tree"
     },
-    "pg-card": {
-        "prefix": "pg-card",
+    "gl-card": {
+        "prefix": "gl-card",
         "body": [
             "<gl-card",
             "  shadow=\"always\"",
@@ -128,27 +130,27 @@
             "  :alt=\"name\"",
             ">",
             "  <template #header>",
-            "    <!-- -->",
+            "    ${1}",
             "  </template>",
             "  <template #operate>",
-            "    <!-- -->",
+            "    ${0}",
             "  </template>",
             "</gl-card>"
         ],
-        "description": "pg-card"
+        "description": "gl-card"
     },
-    "pg-page": {
-        "prefix": "pg-page",
+    "gl-page": {
+        "prefix": "gl-page",
         "body": [
             "<gl-page",
             "  :page=\"page\"",
             "  @change=\"change\"",
             "/>"
         ],
-        "description": "pg-page"
+        "description": "gl-page"
     },
-    "pg-upload": {
-        "prefix": "pg-upload",
+    "gl-upload": {
+        "prefix": "gl-upload",
         "body": [
             "<gl-upload",
             "  :limit=\"10\"",
@@ -164,14 +166,14 @@
             "  @beforeUpload=\"beforeUpload\"",
             ">",
             "  <template #top>",
-            "    <!-- -->",
+            "    ${0}",
             "  </template>",
             "</gl-upload>"
         ],
-        "description": "pg-upload"
+        "description": "gl-upload"
     },
-    "pg-dialog": {
-        "prefix": "pg-dialog",
+    "gl-dialog": {
+        "prefix": "gl-dialog",
         "body": [
             "<gl-dialog",
             "  :title=\"title\"",
@@ -182,17 +184,17 @@
             "  :destroy-on-close=\"true\"",
             ">",
             "  <template #content>",
-            "    <!-- -->",
+            "    ${1}",
             "  </template>",
             "  <template #footer>",
-            "    <!-- -->",
+            "    ${0}",
             "  </template>",
             "</gl-dialog>"
         ],
-        "description": "pg-dialog"
+        "description": "gl-dialog"
     },
-    "pg-dynamicForm": {
-        "prefix": "pg-dynamicForm",
+    "动态表单dynamicForm": {
+        "prefix": "gl-dynamicForm",
         "body": [
             "<DynamicForm",
             "  ref=\"dynamicRef\"",
@@ -205,10 +207,10 @@
             "  </template>",
             "</DynamicForm>"
         ],
-        "description": "pg-dynamicForm"
+        "description": "动态表单dynamicForm"
     },
-    "pg-dynamicFormItem": {
-        "prefix": "pg-dynamicFormItem",
+    "动态表单项dynamicFormItem": {
+        "prefix": "gl-dynamicFormItem",
         "body": [
             "<DynamicFormItem",
             "  v-model=\"formData[item.key]\"",
@@ -216,10 +218,10 @@
             "  contentWidth=\"100%\"",
             "/>"
         ],
-        "description": "pg-dynamicFormItem"
+        "description": "动态表单项dynamicFormItem"
     },
-    "pg-layout": {
-        "prefix": "pg-layout",
+    "左侧树右侧列表布局": {
+        "prefix": "gl-layout",
         "body": [
             "<template>",
             "  <div class=\"listPage\" :class=\"`padding-${_document.padding}`\">",
@@ -400,6 +402,6 @@
             "</style>",
             ""
         ],
-        "description": "pg-layout"
+        "description": "左侧树右侧列表布局"
     },
 }
