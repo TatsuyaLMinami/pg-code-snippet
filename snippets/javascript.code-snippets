@@ -1,0 +1,97 @@
+{
+    "打印": {
+        "prefix": "log",
+        "body":  "console.log('$1')",
+        "description": "打印"
+    },
+    "引入": {
+        "prefix": "import",
+        "body": "import {$1} from '$0'",
+        "description": "引入"
+    },
+    "箭头函数": {
+        "prefix": "function",
+        "body": [
+            "const $1 = ($2) => {",
+            "  $0",
+            "}"
+        ],
+        "description": "箭头函数"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if ($1) {",
+            "  $2",
+            "}"
+        ]
+    },
+    "else if": {
+        "prefix": "elseif",
+        "body": [
+            "else if ($1) {",
+            "  $2",
+            "}"
+        ]
+    },
+    "else": {
+        "prefix": "else",
+        "body": [
+            "else {",
+            "  $2",
+            "}"
+        ]
+    },
+    "map": {
+        "prefix": "map",
+        "body": [
+            "$1.map((item, idx) => {",
+            "  $2",
+            "  return $3",
+            "})"
+        ]
+    },
+    "forEach": {
+        "prefix": "forEach",
+        "body": [
+            "$1.forEach((item, idx) => {",
+            "  $2",
+            "})"
+        ]
+    },
+    "find": {
+        "prefix": "find",
+        "body": [
+            "const $1 = $2.find(item => $3)"
+        ]
+    },
+    "switch": {
+        "prefix": "switch",
+        "body": [
+            "switch($1) {",
+            "  case $2:",
+            "    return $3",
+            "  case $4:",
+            "    return $5",
+            "  case $6:",
+            "    return $7",
+            "  case $8:",
+            "    return $9",
+            "  default:",
+            "    return null",
+            "}"
+        ]
+    },
+    "const": {
+        "prefix": "const",
+        "body": [
+            "const $1 = $2"
+        ]
+    },
+    "let": {
+        "prefix": "let",
+        "body": [
+            "let $1 = $2"
+        ]
+    },
+}
