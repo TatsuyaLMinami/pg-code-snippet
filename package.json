@@ -2,7 +2,7 @@
   "name": "pg-code-snippet",
   "displayName": "pg-code-snippet",
   "description": "vue代码辅助,代码片段自动完成",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "engines": {
     "vscode": "^1.89.0"
   },
