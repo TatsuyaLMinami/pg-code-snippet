@@ -221,7 +221,7 @@
         "description": "动态表单项dynamicFormItem"
     },
     "左侧树右侧列表布局": {
-        "prefix": "gl-layout",
+        "prefix": "gl-layout-1",
         "body": [
             "<template>",
             "  <div class=\"listPage\" :class=\"`padding-${_document.padding}`\">",

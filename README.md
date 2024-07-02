@@ -8,7 +8,7 @@ A vue snippet plugin for vscode.
 | ------------------ | ------------------ | -------- | ------------------------------------------------ |
 | vue-sfc            | 选项式vue          | log      | console.log('$1')                                |
 | vue-composition    | 组合式vue          | import   | import {$1} from '$0'                            |
-| gl-layout          | 左侧树右侧列表布局 | function | const $1 = ($2) => {$0}                          |
+| gl-layout-1        | 左侧树右侧列表布局 | function | const $1 = ($2) => {$0}                          |
 | gl-drawer          | 抽屉               | if       | if ($1) {$2}                                     |
 | gl-table           | 表格               | elseif   | else if ($1) {$2}                                |
 | gl-form            | 表单               | else     | else {$2}                                        |
