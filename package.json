@@ -2,14 +2,23 @@
   "name": "pg-code-snippet",
   "displayName": "pg-code-snippet",
   "description": "vue代码辅助,代码片段自动完成",
-  "version": "0.0.12",
+  "version": "0.0.15",
   "engines": {
     "vscode": "^1.86.1"
   },
   "publisher": "TatsuyaSun",
   "icon": "images/logo.jpg",
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "hollowtree.vue-snippets",
+    "jingwang37.element-plus-snippets"
   ],
   "contributes": {
     "snippets": [
@@ -25,6 +34,19 @@
         "language": "html",
         "path": "./snippets/snippets.code-snippets"
       }
+    ],
+    "commands": [
+      {
+        "command": "extension.checkAndInstallDependency",
+        "title": "Check And Install Dependency"
+      },
+      {
+        "command": "extension.checkIntranet",
+        "title": "Check Intranet"
+      }
     ]
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
   }
 }

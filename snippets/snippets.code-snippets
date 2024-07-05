@@ -194,7 +194,7 @@
         "description": "gl-dialog"
     },
     "动态表单dynamicForm": {
-        "prefix": "gl-dynamicForm",
+        "prefix": "gl-dynamic-form",
         "body": [
             "<DynamicForm",
             "  ref=\"dynamicRef\"",
@@ -210,7 +210,7 @@
         "description": "动态表单dynamicForm"
     },
     "动态表单项dynamicFormItem": {
-        "prefix": "gl-dynamicFormItem",
+        "prefix": "gl-dynamic-form-item",
         "body": [
             "<DynamicFormItem",
             "  v-model=\"formData[item.key]\"",
@@ -221,7 +221,7 @@
         "description": "动态表单项dynamicFormItem"
     },
     "左侧树右侧列表布局": {
-        "prefix": "gl-layout-1",
+        "prefix": "gl-layout-left-tree-right-list",
         "body": [
             "<template>",
             "  <div class=\"listPage\" :class=\"`padding-${_document.padding}`\">",
