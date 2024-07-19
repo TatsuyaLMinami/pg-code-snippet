@@ -2,15 +2,14 @@
   "name": "pg-code-snippet",
   "displayName": "pg-code-snippet",
   "description": "vue代码辅助,代码片段自动完成",
-  "version": "0.0.15",
+  "repository": {},
+  "version": "0.0.23",
   "engines": {
     "vscode": "^1.86.1"
   },
   "publisher": "TatsuyaSun",
   "icon": "images/logo.jpg",
-  "activationEvents": [
-    "*"
-  ],
+  "activationEvents": ["*"],
   "main": "./extension.js",
   "categories": [
     "Snippets",
@@ -21,32 +20,14 @@
     "jingwang37.element-plus-snippets"
   ],
   "contributes": {
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ],
     "commands": [
       {
-        "command": "extension.checkAndInstallDependency",
-        "title": "Check And Install Dependency"
-      },
-      {
-        "command": "extension.checkIntranet",
-        "title": "Check Intranet"
+        "command": "extension.useSnippet1",
+        "title": "Use Snippet"
       }
     ]
   },
   "dependencies": {
-    "axios": "^1.7.2"
+    "@vscode/extension-telemetry": "^0.9.6"
   }
 }
